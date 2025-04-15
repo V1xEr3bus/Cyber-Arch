@@ -1,0 +1,119 @@
+@define-color red #FF003C;
+@define-color noti-bg rgba(8, 8, 8, 0.75);
+@define-color noti-bg-alt rgba(8, 8, 8, 0.25);
+@define-color see-through rgba(0, 0, 0, 0);
+@define-color black #080808;
+@define-color yellow #FCEE09;
+@define-color cyan #00F0FF;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  color: @red;
+}
+
+.notification-row {
+  outline: none;
+  border-radius: 15px;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: @noti-bg-alt;
+}
+
+.notification {
+  border: 1px solid @red;
+  border-radius: 15px;
+  margin: 5px 15px;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(255, 0, 60, 0.3);
+  background-color: @noti-bg;
+}
+
+.critical {
+  border: 2px solid @yellow;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.close-button {
+  background: transparent;
+  color: @yellow;
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin: 5px;
+}
+
+.control-center {
+  background-color: @noti-bg;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 60, 0.2);
+}
+
+.control-center .widget-title {
+  color: @cyan;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 5px 10px;
+}
+
+.widget-buttons-grid button,
+.widget-dnd,
+.widget-backlight,
+.widget-volume,
+.widget-mpris {
+  border-radius: 12px;
+  background-color: @noti-bg-alt;
+  margin: 5px;
+  padding: 6px 10px;
+}
+
+.widget-buttons-grid button:hover {
+  background-color: @see-through;
+  border: 1px solid @cyan;
+}
+
+
+.close-button {
+  background: transparent;
+  color: @yellow;
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin: 5px;
+}
+
+.control-center {
+  background-color: @noti-bg;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 60, 0.2);
+}
+
+.control-center .widget-title {
+  color: @cyan;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 5px 10px;
+}
+
+.widget-buttons-grid button,
+.widget-dnd,
+.widget-backlight,
+.widget-volume,
+.widget-mpris {
+  border-radius: 12px;
+  background-color: @noti-bg-alt;
+  margin: 5px;
+  padding: 6px 10px;
+}
+
+.widget-buttons-grid button:hover {
+  background-color: @see-through;
+  border: 1px solid @cyan;
+}
+

@@ -1,0 +1,111 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 0,
+
+  "notification-icon-size": 48,
+  "notification-body-image-height": 160,
+  "notification-body-image-width": 90,
+  "notification-window-width": 366,
+  "control-center-width": 380,
+
+  "timeout": 5,
+  "timeout-low": 2,
+  "timeout-critical": 0,
+  "transition-time": 100,
+
+  "fit-to-screen": true,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+
+  "scripts": {
+    "example-script": {
+      "exec": "echo 'Do something...'",
+      "urgency": "Normal"
+    }
+  },
+
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Spotify"
+    }
+  },
+
+  "widgets": [
+    "buttons-grid",
+    "dnd",
+    "backlight",
+    "volume",
+    "mpris",
+    "title",
+    "notifications"
+  ],
+
+  "widget-config": {
+    "buttons-grid": {
+      "columns": 2,
+      "actions": [
+        {
+          "label": "   Reboot",
+          "command": "systemctl reboot"
+        },
+        {
+          "label": "   Shut down",
+          "command": "systemctl poweroff"
+        },
+        {
+          "label": "  WI-FI",
+          "command": "sh $HOME/.config/rofi/scripts/rofi-wifi.sh"
+        },
+        {
+          "label": " Bluetooth",
+          "command": "sh $HOME/.config/rofi/scripts/rofi-bluetooth.sh"
+        }
+      ]
+    },
+
+    "title": {
+      "text": "History",
+      "clear-all-button": true,
+      "button-text": "Clear"
+    },
+
+    "dnd": {
+      "text": "Fuck Off!"
+    },
+
+    "label": {
+      "max-lines": 1,
+      "text": "Controll Center"
+    },
+
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 6
+    },
+
+    "volume": {
+      "label": " ",
+      "expand-button-label": "",
+      "collapse-button-label": "",
+      "show-per-app": true,
+      "show-per-app-icon": true,
+      "show-per-app-label": false
+    },
+
+    "backlight": {
+      "label": "󰃟 ",
+      "subsystem": "backlight",
+      "device": "intel_backlight"
+    }
+  }
+}
+

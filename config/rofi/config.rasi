@@ -1,0 +1,13 @@
+
+configuration {
+    show-icons: true;
+    terminal: "kitty";
+    steal-focus: true;
+
+    filebrowser {
+        directories-first: true;
+        sorting-method: "name";
+    }
+}
+
+@theme "/home/Anubis/.local/share/rofi/themes/cyberpunk.rasi"
