@@ -67,8 +67,8 @@
 .widget-backlight,
 .widget-volume,
 .widget-mpris {
-  border-radius: 12px;
-  background-color: @noti-bg-alt;
+  border-radius: 15px;
+  background-color: @see-through;
   margin: 5px;
   padding: 6px 10px;
 }
@@ -107,13 +107,7 @@
 .widget-volume,
 .widget-mpris {
   border-radius: 12px;
-  background-color: @noti-bg-alt;
+  background-color: @see-through;
   margin: 5px;
   padding: 6px 10px;
 }
-
-.widget-buttons-grid button:hover {
-  background-color: @see-through;
-  border: 1px solid @cyan;
-}
-

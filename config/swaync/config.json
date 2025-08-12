@@ -51,7 +51,7 @@
 
   "widget-config": {
     "buttons-grid": {
-      "columns": 2,
+      "columns": 4,
       "actions": [
         {
           "label": "   Reboot",

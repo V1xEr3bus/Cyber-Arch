@@ -32,11 +32,12 @@
   },
 
   "hyprland/window": {
-    "format": "{title}",
+    "format": "{class}:{title}",
     "rewrite": {
-      "(.*) - Brave": " ",
-      "(.*) - Zen-Bin": "🐉",
-      "(.*) - kitty": "> [$1]"
+      "^brave-browser:.*$":" ",
+      "^zen-browser:.*$":"🪷",
+      "^kitty:(.*)$":"〔\uf120 〕",
+      "^Code:(.*$)":"\ue70c "
     },
     "separate-outputs": true
   },

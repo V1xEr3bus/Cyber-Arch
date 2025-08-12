@@ -1,5 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    atuin init fish | source
 end
 
 # ========== Startup Tools ==========
@@ -21,6 +22,9 @@ curl -s https://zenquotes.io/api/random | jq -r '.[0].q + " — " + .[0].a'
 # ========== Aliases ==========
 alias v='nvim'
 alias untar='tar -xvzf'
+alias mirror='sudo reflector --age 12 --protocol https --sort rate --number 15 --save /etc/pacman.d/mirrorlist'
+alias bye='sudo shutdown --no-wall -h now'
+alias keyb='sudo systemctl restart kmonad.service'
 
 # File & Directory Navigation
 alias ls='exa -l'
@@ -77,3 +81,5 @@ abbr --add gpo 'git push origin'
 abbr --add gl 'git pull'
 abbr --add lg 'lazygit'
 
+
+thefuck --alias | source
