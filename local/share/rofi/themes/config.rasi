@@ -1,0 +1,31 @@
+configuration {
+	font: "mono 18";
+/*	fixed-num-lines: true;*/
+	show-icons: true;
+/*	icon-theme: ;*/
+/*	sorting-method: "normal";*/
+/*	window-format: "{w}    {c}   {t}";*/
+/*	steal-focus: false;*/
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+
+/*Appearance configuration*/
+window {
+  width: var( width, 25%);
+}
+
+entry, element-text {
+  text-color: rgb(255,0,60);
+}
+
+//@theme "/usr/share/rofi/themes/cyberpunk-fullscreen.rasi"
+
+@theme "/usr/share/rofi/themes/Cyberpunk.rasi"
