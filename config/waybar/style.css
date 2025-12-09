@@ -3,7 +3,9 @@
    ╚════════════════════════╝ */
 
 * {
-  font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif, Noto Sans CJK JP;
+  font-family:
+    "JetBrainsMono Nerd Font", "Font Awesome 7 Free", "Roboto", "Helvetica",
+    "Arial", "sans-serif", "Noto Sans CJK JP";
   font-size: 18px;
 }
 
@@ -118,4 +120,3 @@ label:focus {
 #custom-notification {
   padding: 0 15px;
 }
-

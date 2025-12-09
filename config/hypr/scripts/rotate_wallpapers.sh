@@ -7,7 +7,6 @@
 
 INTERVAL=3600
 SCRIPT_DIR="$(dirname "$0")"
-swww init &> /dev/null
 
 while true; do
   "$SCRIPT_DIR/change_wallpaper.sh"

@@ -30,6 +30,8 @@ alias keyb='sudo systemctl restart kmonad.service'
 alias ls='exa -l'
 alias ll='exa -alh'
 alias tree='exa --tree'
+alias grep='rg'
+alias find='fd'
 
 # File Reading
 alias cat='bat'

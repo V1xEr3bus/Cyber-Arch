@@ -1,0 +1,67 @@
+{
+  "logo": {
+  "source": "~/dotfiles/config/fastfetch/logo.txt",
+  "color": {"1": "#FF003C"}
+  },
+  "modules": [
+    "break",
+
+    // ────────────── Hardware Section ──────────────
+    {
+      "type": "custom",
+      "format": "┌────────────────────── Hardware ──────────────────────┐",
+      "outputColor": "yellow"
+    },
+    { "type": "host", "key": " PC", "keyColor": "cyan" },
+    { "type": "cpu", "key": "│ ├󰍛 CPU", "showPeCoreCount": true, "format": "{1}", "keyColor": "cyan" },
+    { "type": "gpu", "key": "│ ├󰍛 GPU", "keyColor": "cyan" },
+    { "type": "memory", "key": "│ ├󰍛 Memory", "keyColor": "cyan" },
+    { "type": "disk", "key": "│ ├󰍛 Disk", "keyColor": "cyan" },
+    { "type": "battery", "key": "└ └󰍛 Battery", "keyColor": "cyan" },
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────────────────┘",
+      "outputColor": "yellow"
+    },
+
+    "break",
+
+    // ────────────── Software Section ──────────────
+    {
+      "type": "custom",
+      "format": "┌────────────────────── Software ──────────────────────┐",
+      "outputColor": "yellow"
+    },
+    { "type": "os", "key": " OS", "keyColor": "cyan" },
+    { "type": "kernel", "key": "│ ├ Kernel", "keyColor": "cyan" },
+    { "type": "packages", "key": "│ ├󰏖 Packages", "keyColor": "cyan" },
+    { "type": "shell", "key": "│ ├ Shell", "keyColor": "cyan" },
+    {
+      "type": "command",
+      "key": "│ ├ OS Age",
+      "keyColor": "cyan",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    { "type": "uptime", "key": "└ └ Uptime", "keyColor": "cyan" },
+    "break",
+
+    // ────────────── Environment Section ──────────────
+    { "type": "wm", "key": " WE", "keyColor": "cyan" },
+    { "type": "lm", "key": "│ ├ LM", "keyColor": "cyan" },
+    { "type": "wm", "key": "│ ├ WM", "keyColor": "cyan" },
+    { "type": "gpu", "key": "│ ├󰍛 GPU Driver", "format": "{3}", "keyColor": "cyan" },
+    { "type": "terminaltheme", "key": "└ └󰉼 Theme", "keyColor": "cyan" },
+
+    {
+      "type": "custom",
+      "format": "└─────────────────────────────────────────────────────┘",
+      "outputColor": "yellow"
+    },
+    {
+      "type": "custom",
+      "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+    },
+
+    "break"
+  ]
+}

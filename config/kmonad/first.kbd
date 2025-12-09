@@ -45,9 +45,9 @@ sym (tap-hold-next-release 250 lalt (layer-toggle symbols))
   lctl  fn  lmet lalt spc ralt  rctl)
 
 (deflayer symbols
-  esc   f1  f2   f3   f4  f5    f6  f7  f8  f9  f10 f11 f12 prnt  power delete
-  `     1   2    3    4   5     6   7   8   9   0   -   =   bspc
-  tab   S-1 S-2  S-3  S-4 S-5   S-6 S-7 S-8 S-9 S-0 [   ]   \
-  caps  a   \    S-[  [   S-9   S-0 ]   S-] /   ;   '   ret
-  lsft  z   x    c    v   b     n   m   ,   .   /   rsft
+  esc   f1  f2   f3   f4  f5    f6  f7    f8    f9    f10 f11 f12 prnt  power delete
+  `     1   2    3    4   5     6   7     8     9     0   -   =   bspc
+  tab   q   w    S-9  S-0 t     y   pgup  up    pgdn  p   [   ]   \
+  caps  a   \    [    ]   g     h   left  down  right ;   '   ret
+  lsft  z   S-[  S-]  v   b     n   m     ,     .     /   rsft
   lctl  fn  lmet lalt spc ralt  rctl)
